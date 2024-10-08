@@ -1,0 +1,173 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-horizontal{
+    height: 5vh;
+    width: 100vw;
+    background-color: #001051;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    font-size: medium;
+    margin-bottom: 50px;
+    font-weight: normal;
+}   
+
+.colunas {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+@media (max-width: 1200px){
+    .colunas {
+        column-count: 2;
+    }
+} 
+
+@media (max-width: 768px){
+    .colunas {
+        column-count: 1;
+    }
+} 
+
+p {
+    font-size: 2.5vh;
+}
+
+ul { 
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 400px; 
+    display: block;
+    max-width: 100%;
+}
+        
+li{
+    float: left;
+    display: inline;
+}
+
+li a {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 5px 25px; 
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #001051;
+    color: white;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4{
+    text-align: center;
+    color: #003249;
+}
+
+#NossoCasamento, #NossaHistória, #ConfirmaçãoPresença, #ListaPresentes, #Contato{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 80%;
+    text-align: justify;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    height: 0;
+    overflow: hidden;
+}
+
+.container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+b {
+    color: #003249;
+}
+
+form {
+    margin: 0 auto;
+    width: 60%;
+    padding: 1em;
+    border: 1px solid #9AD1D4;
+    background-color: #CCDBDC; 
+    border-radius: 1em;
+}
+
+form div + div {
+    margin-top: 1em;
+}  
+
+label {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+  
+input,
+textarea {
+    width: 100%;
+    border: 1px solid #001051;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+textarea {
+    vertical-align: top;
+    height: 10em;
+    resize: vertical;
+}
+
+button {
+    border: 1px solid #fff;
+    background-color: #001051; 
+    width: 100%;
+    color: white;
+    margin: 0 auto;
+}  
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-button {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 1em;
+    text-align: center;
+    align-items: left;
+}
+
+.rodape{
+    height: 10vh;
+    width: 100%;
+    background-color: #001051;
+    float: left;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+}
+
