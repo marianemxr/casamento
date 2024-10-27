@@ -10,11 +10,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    float: left;
     font-size: medium;
     margin-bottom: 50px;
     font-weight: normal;
+    list-style: none;
+    padding: 0;
 }   
+
+.menu-horizontal li{
+    margin: 0 10px;
+}
 
 .colunas {
     column-count: 3;
@@ -30,6 +35,20 @@
 @media (max-width: 768px){
     .colunas {
         column-count: 1;
+    }
+
+    .menu-horizontal {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu-horizontal li {
+        margin: 10px 0;
+    }
+
+    .rodape {
+        height: auto;
+        padding: 20px 0;
     }
 } 
 
@@ -161,7 +180,6 @@ button {
     height: 10vh;
     width: 100%;
     background-color: #001051;
-    float: left;
     color: #fff;
     display: flex;
     flex-direction: column;
